@@ -1,0 +1,46 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar
+{
+  background-color: #fff !important;
+}
+
+.navbar-brand
+{
+  font-size: 2rem !important;
+  color:  skyblue !important;
+}
+
+.menu_active
+{
+  font-weight: bold;
+  border-bottom: 1px solid skyblue;
+}
+
+
+#header h2{
+  font-size: 30px;
+}
+
+#header .btn-get-started
+{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transform: 0.5s;
+  color: skyblue;
+  border: 2px solid skyblue;
+  text-decoration: none;
+}
