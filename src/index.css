@@ -45,4 +45,15 @@
   color: skyblue;
   border: 2px solid skyblue;
   text-decoration: none;
+ 
+
+}
+
+#header .btn-get-started:hover
+{
+  
+ background-color: skyblue;
+ color: white;
+
+
 }

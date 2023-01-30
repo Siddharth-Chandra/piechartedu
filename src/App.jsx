@@ -1,6 +1,7 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import 'bootstrap/dist/js/bootstrap.bundle';
 import Home from "./Home"
 
 import About from "./About";
@@ -8,6 +9,7 @@ import Courses from "./Courses";
 import Contact from "./Contact";
 import Navbar  from "./Navbar";
 import { Route, Routes,Navigate } from "react-router-dom";
+import Register from "./Register";
 
 
 const App=()=> 
@@ -20,6 +22,7 @@ const App=()=>
             <Route exact path="/about" element={<About/>}/>
             <Route exact path="/courses" element={<Courses/>}/>
             <Route exact path="/contact" element={<Contact/>}/>
+            <Route exact path="/register" element={<Register/>}/>
             <Route path='*' element={<Navigate to='/' />} />
      
        </Routes>

@@ -1,6 +1,7 @@
 import React  from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Navbar=()=>
 {
     return (
@@ -8,18 +9,18 @@ const Navbar=()=>
         <div className="container-fluid-nav bg">
             <div className="row"> 
             <div className="col-10 mx-auto">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
                 <NavLink 
                 className="navbar-brand" 
                 to="/">
-                    Piechart.edu
+                    piechart.edu
                     </NavLink>
                 <button 
                 className="navbar-toggler" 
                 type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
                 aria-controls="navbarSupportedContent" 
                 aria-expanded="false" 
                 aria-label="Toggle navigation">
@@ -29,17 +30,17 @@ const Navbar=()=>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item active">
-                        <NavLink activeClassName="menu_active" exact className="nav-link active" to="/">Home</NavLink>
+                        <NavLink activeClassName="menu_active"  className="nav-link" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink activeClassName='menu_active' className="nav-link" to="/courses">Courses</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName='menu_active' className="nav-link" to="/contact">Contact Us</NavLink>
+                        <NavLink activeClassName='menu_active' className="nav-link" to="/contact">Teach on Piechart</NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink activeClassName='menu_active' className="nav-link" to="/about">About</NavLink>
-                    </li>
+                    </li> */}
                     </ul> 
                 </div>
                 </div>
