@@ -15,7 +15,7 @@ const Register=(props)=>
   const [stream, Setstream]= useState("");
   const [semester, Setsemester]= useState("");
   const [subject, Setsubject]= useState("");
-  const collectionRef= collection(db,"registrations");
+  const collectionRef= collection(db,"StudentRegistrations");
 
 
 
@@ -37,11 +37,14 @@ const Register=(props)=>
         {
             Nane: name,
             Email: email,
+            Semester:semester,
+            Subject:subject,
             MobileNumber:number,
-            Stream:stream
+            Stream:stream,
+            Created: new Date().toLocaleString()
         }
         ).then((docRef) => {
-            alert("Data Successfully Submitted");
+            alert("Data submitted successfully");
         })
         .catch((error) => {
             console.error("Error adding document: ", error);
@@ -66,13 +69,13 @@ const Register=(props)=>
                 <div className="col-md-6 col-10 mx-auto">   
                     <form onSubmit={handleSubmit}>
                     <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Stream</label>
+                    <label  className="form-label">Stream</label>
                     <input type="text" className="form-control" id="exampleFormControlInput1"  required readOnly
                     value={state.title} onChange={(e)=>Setstream(e.target.value)}
                     />
                     </div> 
                     <div className="col-md-12 mb-3">
-                        <label for="validationCustom04" className="form-label">Semester</label>
+                        <label className="form-label">Semester</label>
                         <select className="form-select" id="validationCustom04" required
                          value={semester} onChange={(e)=>Setsemester(e.target.value)}
                         >
@@ -91,41 +94,28 @@ const Register=(props)=>
                         Please choose a stream.
                         </div>
                     </div>
-                    <div className="col-md-12 mb-3">
-                        <label for="validationCustom04" className="form-label">Subject</label>
-                        <select className="form-select" id="validationCustom04" required
-                         value={subject} onChange={(e)=>Setsubject(e.target.value)}
-                        >
-                        <option selected disabled value="">Choose Subject</option>
-                        <option>S1</option>
-                        <option>S2</option>
-                        <option>S3</option>
-                        <option>S4</option>
-                        <option>S5</option>
-                        <option>S6</option>
-                        <option>S7</option>
-                        <option>S8</option>
-                        
-                        </select>
-                        <div className="invalid-feedback">
-                        Please choose a stream.
-                        </div>
+                    <div className="mb-3">
+                    <label  className="form-label">Subject</label>
+                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Subject" required
+                    value={subject} onChange={(e)=>Setsubject(e.target.value)}
+                    />
                     </div>
+                   
 
                     <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Name</label>
+                    <label  className="form-label">Name</label>
                     <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" required
                     value={name} onChange={(e)=>Setname(e.target.value)}
                     />
                     </div>
                     <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Email address</label>
+                    <label  className="form-label">Email address</label>
                     <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Enter Email Address" required
                      value={email} onChange={(e)=>Setemail(e.target.value)}
                     />
                     </div>
                     <div className="mb-3">
-                    <label for="exampleFormControlInput1" className="form-label">Mobile Number</label>
+                    <label  className="form-label">Mobile Number (WhatsApp)</label>
                     <input type="tel" className="form-control" id="exampleFormControlInput1" placeholder="Enter Mobile Number" required
                      value={number} onChange={(e)=>Setnumber(e.target.value)}
                     />

@@ -27,6 +27,18 @@ const Home=()=>
          </div>
         </div>
        </section>
+        
+       <section id="header" className="d-flex align-items-center">
+       <div className="container-fluid">
+         <div className="row"> 
+            <div className="col-10 mx-auto">
+                <div className="row">
+               
+                </div>
+            </div>
+         </div>
+        </div>
+       </section>
 
         </>
     );

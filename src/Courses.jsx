@@ -10,13 +10,10 @@ import Card from "./Card"
 const Courses=()=> 
 {
     const data = [
-        { img: img3, title: "Computer Science & Engineering",desc:"Test" },
-        { img: img1 , title: "Electronics & Communication Engineering",desc:"Test" },
-        { img: img2, title: "Civil Engineering",desc:"Test" },
-      
-
-
-        
+        { img: img3, title: "Computer Science & Engineering",desc:"KTU 2015 and 2019 schemes available" },
+        { img: img1 , title: "Electronics & Communication Engineering",desc:"KTU 2015 and 2019 schemes available" },
+        { img: img2, title: "Civil Engineering",desc:"KTU 2015 and 2019 schemes available" },
+       
         
     ]
 

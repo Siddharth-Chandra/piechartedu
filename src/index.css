@@ -9,9 +9,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .navbar
 {
   background-color: #fff !important;
+  margin-top: 5px;
 }
 
 .navbar-brand
@@ -20,10 +23,16 @@
   color:  skyblue !important;
 }
 
+
+.nav-link
+{
+  margin-left: 10px;
+}
+
 .menu_active
 {
   font-weight: bold;
-  border-bottom: 1px solid skyblue;
+  border-bottom: 1px solid black;
 }
 
 

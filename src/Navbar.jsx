@@ -30,17 +30,17 @@ const Navbar=()=>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item active">
-                        <NavLink activeClassName="menu_active"  className="nav-link" to="/">Home</NavLink>
+                        <NavLink  className="nav-link" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName='menu_active' className="nav-link" to="/courses">Courses</NavLink>
+                        <NavLink  className="nav-link" to="/courses">Courses</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName='menu_active' className="nav-link" to="/contact">Teach on Piechart</NavLink>
+                        <NavLink  className="nav-link nav-teach" to="/teach">Teach on Piechart</NavLink>
                     </li>
-                    {/* <li className="nav-item">
-                        <NavLink activeClassName='menu_active' className="nav-link" to="/about">About</NavLink>
-                    </li> */}
+                    <li className="nav-item">
+                        <NavLink  className="nav-link" to="/contact">Contact</NavLink>
+                    </li>
                     </ul> 
                 </div>
                 </div>
