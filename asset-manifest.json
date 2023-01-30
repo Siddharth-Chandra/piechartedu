@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/piechartedu/static/css/main.d5569ef9.css",
+    "main.js": "/piechartedu/static/js/main.4a224648.js",
+    "static/js/787.db6a3b30.chunk.js": "/piechartedu/static/js/787.db6a3b30.chunk.js",
+    "static/media/img2.jpg": "/piechartedu/static/media/img2.b06e13779cac54bef3c7.jpg",
+    "static/media/img1.jpg": "/piechartedu/static/media/img1.9153ff53e17a1ba3d196.jpg",
+    "static/media/elearn.jpg": "/piechartedu/static/media/elearn.883014f7c51b208da19c.jpg",
+    "static/media/img3.jpg": "/piechartedu/static/media/img3.f3268cb058266437f9ba.jpg",
+    "index.html": "/piechartedu/index.html",
+    "main.d5569ef9.css.map": "/piechartedu/static/css/main.d5569ef9.css.map",
+    "main.4a224648.js.map": "/piechartedu/static/js/main.4a224648.js.map",
+    "787.db6a3b30.chunk.js.map": "/piechartedu/static/js/787.db6a3b30.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5569ef9.css",
+    "static/js/main.4a224648.js"
+  ]
+}
